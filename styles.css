@@ -8,8 +8,20 @@ body {
     align-items: center;
     height: 100vh;
     background-color: hsl(185, 75%, 39%);
-    background-image: url("./images/bg-pattern-top.svg");
+    /* background-image: url("./images/bg-pattern-top.svg"); */
     font-family: 'Kumbh Sans', sans-serif;
+}
+
+body::before {
+    content: '';
+    background-image: url("./images/bg-pattern-bottom.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(25deg);
+
 }
 
 .card {
